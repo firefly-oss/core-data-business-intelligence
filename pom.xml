@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.firefly</groupId>
+        <artifactId>firefly-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath/>
+    </parent>
+
+    <artifactId>core-data-business-intelligence</artifactId>
+    <packaging>pom</packaging>
+
+    <properties>
+        <java.version>25</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <maven.compiler.release>${java.version}</maven.compiler.release>
+    </properties>
+    <modules>
+        <module>core-data-business-intelligence-core</module>
+        <module>core-data-business-intelligence-interfaces</module>
+        <module>core-data-business-intelligence-web</module>
+        <module>core-data-business-intelligence-sdk</module>
+        <module>core-data-business-intelligence-infra</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.firefly</groupId>
+                <artifactId>core-data-business-intelligence-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.firefly</groupId>
+                <artifactId>core-data-business-intelligence-interfaces</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.firefly</groupId>
+                <artifactId>core-data-business-intelligence-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.firefly</groupId>
+                <artifactId>core-data-business-intelligence-sdk</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.firefly</groupId>
+                <artifactId>core-data-business-intelligence-infra</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
