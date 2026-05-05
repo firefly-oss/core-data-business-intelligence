@@ -29,7 +29,7 @@ import org.springframework.web.reactive.config.EnableWebFlux;
         ),
         servers = {
                 @Server(
-                        url = "http://core.getfirefly.io/core-data-business-intelligence",
+                        url = "http://core.getfirefly.io/domain-data-business-intelligence",
                         description = "Development Environment"
                 ),
                 @Server(

@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <artifactId>core-data-business-intelligence</artifactId>
+    <artifactId>domain-data-business-intelligence</artifactId>
     <packaging>pom</packaging>
 
     <properties>
@@ -21,38 +21,38 @@
         <maven.compiler.release>${java.version}</maven.compiler.release>
     </properties>
     <modules>
-        <module>core-data-business-intelligence-core</module>
-        <module>core-data-business-intelligence-interfaces</module>
-        <module>core-data-business-intelligence-web</module>
-        <module>core-data-business-intelligence-sdk</module>
-        <module>core-data-business-intelligence-infra</module>
+        <module>domain-data-business-intelligence-core</module>
+        <module>domain-data-business-intelligence-interfaces</module>
+        <module>domain-data-business-intelligence-web</module>
+        <module>domain-data-business-intelligence-sdk</module>
+        <module>domain-data-business-intelligence-infra</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>com.firefly</groupId>
-                <artifactId>core-data-business-intelligence-core</artifactId>
+                <artifactId>domain-data-business-intelligence-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.firefly</groupId>
-                <artifactId>core-data-business-intelligence-interfaces</artifactId>
+                <artifactId>domain-data-business-intelligence-interfaces</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.firefly</groupId>
-                <artifactId>core-data-business-intelligence-web</artifactId>
+                <artifactId>domain-data-business-intelligence-web</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.firefly</groupId>
-                <artifactId>core-data-business-intelligence-sdk</artifactId>
+                <artifactId>domain-data-business-intelligence-sdk</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.firefly</groupId>
-                <artifactId>core-data-business-intelligence-infra</artifactId>
+                <artifactId>domain-data-business-intelligence-infra</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

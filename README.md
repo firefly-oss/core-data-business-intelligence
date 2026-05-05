@@ -1,1 +1,1 @@
-# core-data-business-intellifence
+# domain-data-business-intelligence

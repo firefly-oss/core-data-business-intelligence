@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.firefly</groupId>
-        <artifactId>core-data-business-intelligence</artifactId>
+        <artifactId>domain-data-business-intelligence</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>core-data-business-intelligence-web</artifactId>
+    <artifactId>domain-data-business-intelligence-web</artifactId>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,7 +29,7 @@
         <!-- Internal modules -->
         <dependency>
             <groupId>com.firefly</groupId>
-            <artifactId>core-data-business-intelligence-interfaces</artifactId>
+            <artifactId>domain-data-business-intelligence-interfaces</artifactId>
         </dependency>
 
         <!-- Common Libraries -->
@@ -89,7 +89,7 @@
         </dependency>
         <dependency>
             <groupId>com.firefly</groupId>
-            <artifactId>core-data-business-intelligence-core</artifactId>
+            <artifactId>domain-data-business-intelligence-core</artifactId>
         </dependency>
     </dependencies>
 

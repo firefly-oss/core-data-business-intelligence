@@ -14,5 +14,5 @@ jobs:
       packages: write
     with:
       java-version: '25'
-      web-module: 'core-data-business-intelligence-web'
+      web-module: 'domain-data-business-intelligence-web'
     secrets: inherit
