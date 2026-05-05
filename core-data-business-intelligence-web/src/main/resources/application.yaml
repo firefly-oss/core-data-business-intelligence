@@ -23,12 +23,18 @@ firefly:
   data:
     enrichment:
       enabled: true
+      # SmartEnrichmentController in fireflyframework-starter-data takes
+      # EnrichmentCacheService as a required constructor dep, so the cache
+      # bean must be created or the context fails to start.
+      cache-enabled: true
       discovery:
         enabled: true
 
 orbis:
-  base-url: https://api.bvdinfo.com
-  api-token: ${ORBIS_API_TOKEN}
+  # Pointed at the local Python mock ORBIS server (mock-orbis-server/mock_orbis_server.py).
+  # Override with ORBIS_BASE_URL to target the real service.
+  base-url: ${ORBIS_BASE_URL:http://127.0.0.1:55335}
+  api-token: ${ORBIS_API_TOKEN:mock-orbis-token}
 
 server:
   port: 8085
